@@ -1,0 +1,56 @@
+
+Branches and Merging
+
+
+1. first checkout the project files from the github using "git clone"
+	c:\users\desktop\$git clone <repository url>
+	c:\users\desktop\ $git clone https://github.com/cubeiplKumar/masterrepo1.git
+
+
+ 2 : Create new branch
+	c:\user\desktop\masterrepo1\ $git branch “branch name” 
+	c:\user\desktop\masterrepo1\$git branch development
+
+
+3 : Checkout  into new branch (i.e into development)
+	c:\user\desktop\masterrepo1\$git checkout “branch name” 
+	c:\user\desktop\masterrepo1\$git checkout development
+
+	Now you will change to new branch , add some new files into the new branch.
+	add the files, commit 
+	-c:\user\desktop\masterrepo1\$touch new.txt
+	-c:\user\desktop\masterrepo1\$git add new.txt
+	-c:\user\desktop\masterrepo1\$git commit -m "added new file"
+	-c:\user\desktop\masterrepo1\$git push -u origin development
+      (if you check it in github online, you will not see the new.txt file in the master repository)
+
+4 :  Before merging the branch into master, checkout into master
+	c:\user\desktop\masterrepo1\$git checkout master
+	Merge new branch in master branch 
+	git merge “branch name” 
+	c:\user\desktop\masterrepo1\git merge development
+	c:\user\desktop\masterrepo1\git push - u origin master
+
+5 : Delete branch 
+	$git branch -d “branch name”     		 — delete from local 
+	$git branch -d development
+	$git push origin - -delete “branch name”          — delete from remote 
+	$git push origin - - delete development
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
